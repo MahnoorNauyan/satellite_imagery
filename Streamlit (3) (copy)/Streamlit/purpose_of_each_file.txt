@@ -1,0 +1,29 @@
+Project Introduction:
+This project uses YOLOv8 model from ultralytics to detect the individual hosues from the satellite images. We use the output of this model to find the area of the houses as polygons, these polygons eventually segment the houses and are used to calculate surface areas of the houses. 
+This surface area is then used to caculate the property tax of each house. This project integrates streamlit library to view the results of the model in the runtime. The app runs on the pre-trained YOLOv8 model.
+
+The user is provided with the option to upload his own image, the model performs calculcations and shows the output in the runtime. Additionally, the user can also set confidence level threshold to change the output of the model.
+
+
+**This document contains the information regarding all the code files in the 'Streamlit' folder.**
+
+Dependancies:
+This file imports all the libraries required to run the app.
+
+Main:
+This python file is the main app file for streamlit. It contains all the structure of the app. 
+
+Home:
+This file contains the code for 'Home' page of the app. 
+
+Login:
+This app contains the code for 'User' page of the app. This includes separate functions for signup() and signin() functionalities. It also contains the user_dashboard() function to print the user information and allows the user to change the details as well. 
+
+Model:
+This file imports the YOLOv8 model. This file has all the necesaary code required to run the model and displays the output at last. 
+
+Draw_poly:
+This file contains the code to draw polygons on individual houses predicted in the image. This file also conatins the code to calculate and display the property tax when hovered over the image.
+
+About:
+This file contains the code for 'About' page of the app. This page is intended to dsiplay the usage and functionality of the app and individual components.

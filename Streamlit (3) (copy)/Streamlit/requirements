@@ -1,0 +1,14 @@
+streamlit
+pandas
+opencv-python
+numpy
+PIL
+ultralytics
+hashlib
+psycopg2
+secrets
+SQLAlchemy==2.0.27
+smtplib
+mplcursors
+MIMEText
+datetime
